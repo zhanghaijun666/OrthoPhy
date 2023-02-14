@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 
 """\
-This is the develop version of Ortholog-Finder2
-Ortholog-Finder2: A Tool for Constructing an Ortholog Data Set
+OrthoPhy: A program to construct ortholog datasets using taxonomic information
 
-USAGE: OrthologFinder --indir <dir> --out <dir> [options]
+USAGE: OrthoPhy.py --indir <dir> --out <dir> [options]
 
 [OPTIONS]:
   --indir        <dir>    Input fasta or genbank format files directory
   --out          <dir>    Output directory
-  --coverage|-c  <float>  coverage cut off [default:0.5]
   --Inflation|-I <float>  the initial mcl inflation value [default:1.2]
   --delta        <float>  the increment value of the inflation [default:0.2]
   --end          <float>  the max inflation value that is to be accept (may not be last value) [default:2.0]
