@@ -24,21 +24,6 @@ USAGE: OrthoPhy.py --indir <dir> --out <dir> [options]
   --seperate              Estimate the concatenated tree by estimating the substitution matrix for each gene in IQ-TREE (i.e. use partition model).
   --no_filtering          Do not filter unreliable alignment region [default: off]
   --no_concatenate        do not infer concatenate tree [default:off]
-
-Copyright (C) 2018 - HKW
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.3
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty ofp;
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>
 """
 
 import argparse
