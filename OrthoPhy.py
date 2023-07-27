@@ -292,7 +292,7 @@ class OrthologFinder():
             raise ValueError("Not found: {0}".format(str(self.indir)))
         direct_files = [direct_file for direct_file in self.indir.glob("*.*")
                         if direct_file.is_file()]
-        if direct_files:
+        if not direct_files:
             raise ValueError(
                 "Species seq file must be contained in any subdirectory")
 
