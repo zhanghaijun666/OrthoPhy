@@ -15,7 +15,8 @@
         "--indir",
         "./data/origin",
         "--out",
-        "./data/result"
+        "./data/result",
+        "--force"
       ]
     }
   ]
