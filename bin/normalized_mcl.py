@@ -337,6 +337,10 @@ class RBH():
         fastas = self.fasta_dir.glob("**/*.*")
         fastas = [str(fasta) for fasta in fastas]
         last_id = ""
+        # TODO 拿不到文件直接返回
+        if not fastas:
+            print("------无法找到文件（**/*.*）: {0}".format(str(self.fasta_dir)))
+            return;
         with fileinput.input(files=fastas) as f:
             for line in f:
                 line = line.rstrip()
@@ -410,6 +414,9 @@ class RBH():
 
     def mcl_groups(self):
         mcl_out = self.mcl_out
+        if not mcl_out.exists():
+            print("------文件不存在: {0}".format(str(mcl_out)))
+            raise ValueError("Not found: {0}".format(str(mcl_out)))
         with open(str(mcl_out), "r", encoding="UTF-8") as f:
             while True:
                 line = next(f)
